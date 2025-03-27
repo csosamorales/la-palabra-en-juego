@@ -3,8 +3,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import NavLink from './NavLink';
-import MobileMenu from './MobileMenu';
-import { Overlay } from './Overlay';
+// import MobileMenu from './MobileMenu';
+// import { Overlay } from './Overlay';
 
 const Navbar: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
