@@ -1,27 +1,28 @@
-"use client";
+'use client';
 
-import React, { forwardRef } from "react";
+import Link from 'next/link';
+import React, { forwardRef } from 'react';
 
 interface NavLinkProps {
-  href?: string;
-  children: React.ReactNode;
-  className?: string;
+	href?: string;
+	children: React.ReactNode;
+	className?: string;
 }
 
 const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
-  ({ href = "#", children, className = "" }, ref) => {
-    return (
-      <a
-        ref={ref}
-        href={href}
-        className={`text-base text-center text-black hover:text-slate-600 transition-colors ${className}`}
-      >
-        {children}
-      </a>
-    );
-  },
+	({ href = '#', children, className = '' }, ref) => {
+		return (
+			<Link
+				ref={ref}
+				href={href}
+				className={`text-base text-center text-black hover:scale-110 transition-transform duration-700 ease-out ${className}`}
+			>
+				{children}
+			</Link>
+		);
+	}
 );
 
-NavLink.displayName = "NavLink";
+NavLink.displayName = 'NavLink';
 
 export default NavLink;
