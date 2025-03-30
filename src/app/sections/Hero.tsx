@@ -3,7 +3,7 @@ import Image from 'next/image';
 export const HeroSection: React.FC = () => (
 	<section
 		id="hero-section"
-		className="w-full h-[90vh] md:min-[90vh] flex flex-col justify-center items-center gap-2"
+		className="w-full h-[90vh] md:min-[90vh] flex flex-col justify-center items-center gap-1"
 	>
 		<Image
 			src="/background.png"
@@ -13,7 +13,7 @@ export const HeroSection: React.FC = () => (
 			className="!w-auto !h-[80%] !top-[10%] lg:!top-0 lg:!h-[90%] mr-auto ml-auto mt-16 mb-16 hidden md:inline -z-0"
 		/>
 
-		<div className="flex flex-col justify-center items-center gap-2 animate-fade animate-once animate-duration-[1500ms] animate-ease-in">
+		<div className="flex flex-col justify-center items-center gap-1 animate-fade animate-once animate-duration-[1500ms] animate-ease-in">
 			<span className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-title">
 				La palabra en juego
 			</span>
