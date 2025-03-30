@@ -5,8 +5,8 @@ import Image from 'next/image';
 import NavLink from './NavLink';
 import Link from 'next/link';
 import MobileMenu from './MobileMenu';
-// import { Overlay } from './Overlay';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import { Overlay } from './Overlay';
+import { RxHamburgerMenu } from 'react-icons/rx';
 
 const Navbar: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -98,16 +98,16 @@ const Navbar: React.FC = () => {
 						aria-expanded={isMenuOpen}
 						onClick={toggleMenu}
 					>
-						<GiHamburgerMenu />
+						<RxHamburgerMenu size={24} />
 					</button>
 					<MobileMenu
 						isOpen={isMenuOpen}
 						onClose={() => setIsMenuOpen(false)}
 					/>
-					{/* <Overlay
+					<Overlay
 						isVisible={isMenuOpen}
 						onClick={() => setIsMenuOpen(false)}
-					/> */}
+					/>
 				</div>
 			</nav>
 		</>

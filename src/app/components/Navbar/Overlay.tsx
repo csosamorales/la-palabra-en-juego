@@ -12,7 +12,7 @@ export const Overlay: React.FC<OverlayProps> = ({ isVisible, onClick }) => {
 
 	return (
 		<div
-			className="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300"
+			className="fixed inset-0 h-dvh backdrop-blur-[2px] bg-transparent bg-opacity-0 z-40 transition-opacity duration-300"
 			onClick={onClick}
 			aria-hidden="true"
 			role="presentation"
