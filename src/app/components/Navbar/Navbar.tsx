@@ -4,8 +4,9 @@ import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import NavLink from './NavLink';
 import Link from 'next/link';
-// import MobileMenu from './MobileMenu';
-// import { Overlay } from './Overlay';
+import MobileMenu from './MobileMenu';
+import { Overlay } from './Overlay';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,7 +57,7 @@ const Navbar: React.FC = () => {
 	return (
 		<>
 			<nav
-				className={`fixed top-0 left-0 transition-transform duration-500 flex justify-between items-center px-9 w-full h-16 backdrop-blur-[2px] bg-transparent bg-opacity-0 z-50 ${
+				className={`fixed top-0 left-0 transition-transform duration-500 flex justify-between items-center px-4 sm:px-9 w-full h-16 backdrop-blur-[2px] bg-transparent bg-opacity-0 z-50 animate-fade-down animate-once animate-duration-1000 animate-delay-200 ${
 					hidden ? '-translate-y-full' : 'translate-y-0'
 				}`}
 				role="navigation"
@@ -85,31 +86,28 @@ const Navbar: React.FC = () => {
 
 				<div className="flex items-center">
 					<button
-						className="text-base py-0.5 px-1 font-bold rounded-lg border-2 cursor-pointer bg-[#523f7d4f] border-523f7d text-523f7d font-title hover:bg-opacity-40 transition-colors"
+						className="text-base py-0.5 px-1 font-bold rounded-lg border-2 cursor-pointer bg-[#523f7d4f] border-523f7d text-523f7d font-title hover:scale-110 transition-transform duration-500 ease-out"
 						aria-label="Reservar turno"
 					>
 						RESERVAR TURNO
 					</button>
 					<button
 						ref={menuButtonRef}
-						className="hidden ml-4 max-sm:block"
+						className="ml-4 block sm:hidden"
 						aria-label="Toggle menu"
 						aria-expanded={isMenuOpen}
 						onClick={toggleMenu}
 					>
-						<i
-							className="ti ti-menu-2 text-2xl text-black"
-							aria-hidden="true"
-						/>
+						<GiHamburgerMenu />
 					</button>
-					{/* <MobileMenu
+					<MobileMenu
 						isOpen={isMenuOpen}
 						onClose={() => setIsMenuOpen(false)}
 					/>
 					<Overlay
 						isVisible={isMenuOpen}
 						onClick={() => setIsMenuOpen(false)}
-					/> */}
+					/>
 				</div>
 			</nav>
 		</>

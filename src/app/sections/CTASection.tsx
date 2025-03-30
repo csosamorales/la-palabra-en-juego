@@ -37,7 +37,7 @@ export const CTASection: React.FC = () => {
 								width={60}
 								height={60}
 								alt="Calendar icon para reservar turno"
-								className="scale-95 hover:scale-110 transition-transform duration-700 ease-out"
+								className="scale-95 hover:scale-110 transition-transform duration-500 ease-out animate-pulse animate-infinite"
 							/>
 						</button>
 					</div>

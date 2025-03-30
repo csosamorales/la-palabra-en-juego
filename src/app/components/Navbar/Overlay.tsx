@@ -8,7 +8,7 @@ interface OverlayProps {
 }
 
 export const Overlay: React.FC<OverlayProps> = ({ isVisible, onClick }) => {
-	if (!isVisible) return null;
+	if (true) return null;
 
 	return (
 		<div

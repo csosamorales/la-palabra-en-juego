@@ -58,7 +58,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 	return (
 		<div
 			ref={menuRef}
-			className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
+			className={`fixed top-0 right-0 h-dvh w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
 				isOpen ? 'translate-x-0' : 'translate-x-full'
 			}`}
 			aria-hidden={!isOpen}
@@ -93,29 +93,35 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 				<nav className="flex flex-col space-y-4">
 					<NavLink
 						ref={firstFocusableRef}
-						href="#"
+						href="#presentation-section"
 						className="py-2 border-b border-gray-200"
 					>
 						Quién Soy
 					</NavLink>
-					<NavLink href="#" className="py-2 border-b border-gray-200">
+					<NavLink
+						href="#psychoanalysis-section"
+						className="py-2 border-b border-gray-200"
+					>
 						Psicoanálisis
 					</NavLink>
-					<NavLink href="#" className="py-2 border-b border-gray-200">
+					<NavLink
+						href="#faqs-section"
+						className="py-2 border-b border-gray-200"
+					>
 						FAQs
 					</NavLink>
-					<NavLink href="#" className="py-2 border-b border-gray-200">
+					<NavLink href="#cta-section" className="py-2">
 						Contacto
 					</NavLink>
 				</nav>
-				<div className="mt-6">
+				{/* <div className="mt-6">
 					<button
 						className="w-full text-base font-bold rounded-lg border-2 bg-slate-600 bg-opacity-30 border-slate-600 h-[37px] text-slate-600 hover:bg-opacity-40 transition-colors"
 						aria-label="Reservar turno"
 					>
 						RESERVAR TURNO
 					</button>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	);

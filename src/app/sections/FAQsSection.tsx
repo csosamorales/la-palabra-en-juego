@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export const FAQSection: React.FC = () => {
 	return (
-		<section id='faqs-section' className="px-0 py-14">
+		<section id="faqs-section" className="px-0 py-14">
 			<h2 className="mb-20 text-5xl text-center text-black max-sm:text-3xl">
 				Preguntas Frecuentes
 			</h2>
@@ -28,7 +28,7 @@ const Accordion: React.FC = () => {
 			{faqItems.map((item, index) => (
 				<div className="mb-10" key={index}>
 					<button
-						className="flex gap-2 items-center justify-between w-full text-left py-2 text-2xl max-sm:text-xl"
+						className="flex gap-2 items-center justify-between w-full text-left py-2 text-2xl max-sm:text-xl cursor-pointer"
 						onClick={(e) => {
 							e.preventDefault();
 							toggleFaq(index);

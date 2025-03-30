@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import 'tailwindcss-animated';
 
 :root {
 	--background: #f1f1ef;
@@ -21,6 +22,7 @@
 	--font-mono: var(--font-geist-mono);
 	--font-text: var(--font-karma);
 	--font-title: var(--font-phudu);
+	--breakpoint-xs: 26.5625rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +30,10 @@
 		--background: #f1f1ef;
 		--foreground: #000000;
 	}
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
