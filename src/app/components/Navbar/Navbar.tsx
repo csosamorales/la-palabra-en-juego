@@ -5,7 +5,7 @@ import Image from 'next/image';
 import NavLink from './NavLink';
 import Link from 'next/link';
 import MobileMenu from './MobileMenu';
-import { Overlay } from './Overlay';
+// import { Overlay } from './Overlay';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar: React.FC = () => {
@@ -104,10 +104,10 @@ const Navbar: React.FC = () => {
 						isOpen={isMenuOpen}
 						onClose={() => setIsMenuOpen(false)}
 					/>
-					<Overlay
+					{/* <Overlay
 						isVisible={isMenuOpen}
 						onClick={() => setIsMenuOpen(false)}
-					/>
+					/> */}
 				</div>
 			</nav>
 		</>
