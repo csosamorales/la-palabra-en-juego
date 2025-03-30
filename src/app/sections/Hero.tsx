@@ -14,7 +14,7 @@ export const HeroSection: React.FC = () => (
 			La palabra en juego
 		</span>
 		<h1 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl !font-text">
-			Terapia de psicoanálitica online
+			Terapia psicoanálitica online
 		</h1>
 		<Image
 			src="/fondo-mobile.png"
