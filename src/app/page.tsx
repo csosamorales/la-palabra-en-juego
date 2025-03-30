@@ -6,6 +6,7 @@ import { HeroSection } from './sections/Hero';
 import { PresentationSection } from './sections/PresentationSection';
 import { PsychoanalysisSection } from './sections/PsychoanalysisSection';
 import NavigationBar from './components/Navbar/NavigationBar';
+import { StickyBar } from './components/StickyBar/StickyBar';
 
 export default function Home() {
 	return (
@@ -19,6 +20,7 @@ export default function Home() {
 				<FAQSection />
 				<CTASection />
 			</main>
+			<StickyBar />
 			<SiteFooter />
 		</div>
 	);
