@@ -27,7 +27,7 @@ export const FloatingContactButton: React.FC = () => {
 				aria-modal={isOpen}
 				aria-label="Mobile navigation menu"
 			>
-				<Tooltip text="Consultar por WhatsApp">git
+				<Tooltip text="Consultar por WhatsApp">
 					<Link
 						href="https://api.whatsapp.com/send?phone=5492944624173&text=Hola!%20Quiero%20saber%20más%20sobre%20los%20turnos."
 						target="_blank"
