@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import { IoCalendarOutline } from 'react-icons/io5';
+import { LINKS } from '@/app/constants';
+import Link from 'next/link';
 
 export const CTASection: React.FC = () => {
 	return (
@@ -31,15 +34,18 @@ export const CTASection: React.FC = () => {
 							alt="arrow"
 							className="md:hidden"
 						/>
-						<button className="cursor-pointer">
-							<Image
-								src="./calendar-icon.svg"
-								width={60}
-								height={60}
-								alt="Calendar icon para reservar turno"
-								className="scale-95 hover:scale-110 transition-transform duration-500 ease-out animate-pulse animate-infinite"
+						<Link
+							href={LINKS.calendly}
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Calendar"
+							className="animate-jump animate-infinite animate-duration-[4500ms] animate-delay-500"
+						>
+							<IoCalendarOutline
+								size={60}
+								aria-label="Calendar icon para reservar turno"
 							/>
-						</button>
+						</Link>
 					</div>
 				</div>
 			</div>

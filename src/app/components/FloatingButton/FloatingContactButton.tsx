@@ -6,6 +6,7 @@ import { BiSolidConversation } from 'react-icons/bi';
 import { FaWhatsapp, FaTimes } from 'react-icons/fa';
 import { IoCalendarOutline } from 'react-icons/io5';
 import { Tooltip } from '../Tooltip/Tooltip';
+import { LINKS } from '@/app/constants';
 
 export const FloatingContactButton: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,7 @@ export const FloatingContactButton: React.FC = () => {
 			>
 				<Tooltip text="Consultar por WhatsApp">
 					<Link
-						href="https://api.whatsapp.com/send?phone=5492944624173&text=Hola!%20Quiero%20saber%20más%20sobre%20los%20turnos."
+						href={LINKS.whatsapp}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="rounded-full bg-green-600 border-2 border-green-800 text-white p-2 cursor-pointer shadow-lg flex items-center space-x-2 transition-transform duration-300 hover:scale-110"
@@ -41,7 +42,7 @@ export const FloatingContactButton: React.FC = () => {
 
 				<Tooltip text="Reservar consulta de 15 minutos">
 					<Link
-						href="https://calendly.com/psicologalapalabraenjuego/30min?month=2023-10"
+						href={LINKS.calendly}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="rounded-full bg-blue-500 border-2 border-blue-800 text-white p-2 cursor-pointer shadow-lg flex items-center space-x-2 transition-transform duration-300 hover:scale-110"

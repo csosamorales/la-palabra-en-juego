@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { BiSolidConversation } from 'react-icons/bi';
 
 export const PresentationSection: React.FC = () => (
@@ -43,13 +44,14 @@ export const PresentationSection: React.FC = () => (
 					conocernos o escribirme por WhatsApp.
 				</p>
 			</div>
-			<button
+			<Link
+				href={'/#cta-section'}
 				className="flex flex-row gap-2 items-center text-xl font-title font-bold rounded-2xl border-2 border-solid cursor-pointer bg-[#523f7d4f] border-523f7d text-523f7d hover:scale-110 transition-transform duration-500 ease-out py-3 px-6 w-fit"
 				aria-label="Contactar a Guido Le Vigne"
 			>
 				<BiSolidConversation />
 				Contactame
-			</button>
+			</Link>
 		</div>
 	</section>
 );

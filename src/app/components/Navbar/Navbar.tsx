@@ -7,6 +7,7 @@ import Link from 'next/link';
 import MobileMenu from './MobileMenu';
 import { Overlay } from './Overlay';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { LINKS } from '@/app/constants';
 
 const Navbar: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,6 +55,11 @@ const Navbar: React.FC = () => {
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
+
+	const scrollToTop = () => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	};
+
 	return (
 		<>
 			<nav
@@ -64,7 +70,7 @@ const Navbar: React.FC = () => {
 				aria-label="Main Navigation"
 			>
 				<div className="flex items-center">
-					<Link href="#">
+					<button onClick={scrollToTop} aria-label="Scroll to top">
 						<Image
 							src="./logo-divan.svg"
 							width={40}
@@ -72,7 +78,7 @@ const Navbar: React.FC = () => {
 							alt="Logo La palabra en juego"
 							className="cursor-pointer"
 						/>
-					</Link>
+					</button>
 				</div>
 
 				<div className="flex gap-4 items-center max-sm:hidden">
@@ -85,12 +91,15 @@ const Navbar: React.FC = () => {
 				</div>
 
 				<div className="flex items-center">
-					<button
+					<Link
+						href={LINKS.calendly}
+						target="_blank"
+						rel="noopener noreferrer"
 						className="text-base py-0.5 px-1 font-bold rounded-lg border-2 cursor-pointer bg-[#523f7d4f] border-523f7d text-523f7d font-title hover:scale-110 transition-transform duration-500 ease-out"
 						aria-label="Reservar turno"
 					>
 						RESERVAR TURNO
-					</button>
+					</Link>
 					<button
 						ref={menuButtonRef}
 						className="ml-4 block sm:hidden"

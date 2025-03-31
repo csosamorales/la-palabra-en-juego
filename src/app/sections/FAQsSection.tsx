@@ -2,6 +2,7 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import { useState } from 'react';
+import { FaChevronDown } from 'react-icons/fa';
 
 export const FAQSection: React.FC = () => {
 	return (
@@ -37,11 +38,8 @@ const Accordion: React.FC = () => {
 						aria-controls={`faq-answer-${index}`}
 					>
 						<span>{item.question}</span>
-						<Image
-							src="./chevron-down.svg"
-							height={20}
-							width={20}
-							alt="Chevron icon"
+						<FaChevronDown
+							size={20}
 							className={classNames(
 								'transition-transform duration-500 ease-in-out',
 								{
