@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 import { FloatingContactButton } from '../FloatingButton/FloatingContactButton';
+import { ScrollToTop } from '../ScrollToTop/ScrollToTop';
 
 export const StickyBar: React.FC = () => {
 	return (
@@ -30,18 +31,13 @@ const ScrollToTopButton: React.FC = () => {
 		return () => window.removeEventListener('scroll', toggleVisibility);
 	}, []);
 
-	const scrollToTop = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	};
-
 	return (
-		<button
+		<ScrollToTop
 			className={`rounded-full bg-[#523f7d4f] border-2 border-523f7d text-523f7d p-2 cursor-pointer ${
 				isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
 			}`}
-			onClick={scrollToTop}
 		>
 			<FaArrowUp size={24} />
-		</button>
+		</ScrollToTop>
 	);
 };

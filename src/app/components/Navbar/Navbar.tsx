@@ -9,6 +9,8 @@ import { Overlay } from './Overlay';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { LINKS } from '@/app/constants';
 
+import { ScrollToTop } from '../ScrollToTop/ScrollToTop';
+
 const Navbar: React.FC = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -56,10 +58,6 @@ const Navbar: React.FC = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
 
-	const scrollToTop = () => {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	};
-
 	return (
 		<>
 			<nav
@@ -70,7 +68,7 @@ const Navbar: React.FC = () => {
 				aria-label="Main Navigation"
 			>
 				<div className="flex items-center">
-					<button onClick={scrollToTop} aria-label="Scroll to top">
+					<ScrollToTop>
 						<Image
 							src="./logo-divan.svg"
 							width={40}
@@ -78,7 +76,7 @@ const Navbar: React.FC = () => {
 							alt="Logo La palabra en juego"
 							className="cursor-pointer"
 						/>
-					</button>
+					</ScrollToTop>
 				</div>
 
 				<div className="flex gap-4 items-center max-sm:hidden">
