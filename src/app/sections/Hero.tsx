@@ -10,11 +10,11 @@ export const HeroSection: React.FC = () => (
 			alt="background image"
 			fill
 			priority
-			className="!w-auto !h-[80%] !top-[10%] lg:!top-0 lg:!h-[90%] mr-auto ml-auto mt-16 mb-16 hidden md:inline -z-0"
+			className="!w-auto !h-[80%] !top-[10%] lg:!top-0 lg:!h-[90vh] mr-auto ml-auto mt-16 mb-16 hidden md:inline -z-0"
 		/>
 
 		<div className="flex flex-col justify-center items-center gap-1 animate-fade animate-once animate-duration-[1500ms] animate-ease-in">
-			<span className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-title">
+			<span className="text-3xl sm:text-4xl lg:text-[2.5rem] xl:text-6xl font-title">
 				La palabra en juego
 			</span>
 			<h1 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl !font-text">
