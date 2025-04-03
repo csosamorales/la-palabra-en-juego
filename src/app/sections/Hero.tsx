@@ -10,7 +10,7 @@ export const HeroSection: React.FC = () => (
 			alt="background image"
 			fill
 			priority
-			className="!w-auto !h-[80%] !top-[10%] lg:!top-0 lg:!h-[90vh] mr-auto ml-auto mt-16 mb-16 hidden md:inline -z-0"
+			className="!w-auto !h-[80%] !top-[10%] lg:!top-0 lg:!h-[90vh] mr-auto ml-auto mt-16 mb-16 hidden md:inline -z-0 animate-fade animate-duration-[4500ms] animate-delay-500"
 		/>
 
 		<div className="flex flex-col justify-center items-center gap-1 animate-fade animate-once animate-duration-[1500ms] animate-ease-in">
