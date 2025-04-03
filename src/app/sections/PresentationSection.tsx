@@ -18,30 +18,35 @@ export const PresentationSection: React.FC = () => (
 			<h1 className="mb-10 text-6xl text-center text-black max-sm:text-4xl">
 				Hola! Soy Guido Le Vigne
 			</h1>
-			<div className="mb-9 text-md leading-normal text-black max-sm:text-base">
+			<div className="mb-9 text-xl leading-normal text-black max-sm:text-base">
 				<p>
-					Licenciado en Psicología (Mat. Nac.: 75427) por la
-					Universidad de Ciencias Empresariales y Sociales (UCES). Mi
-					práctica clínica se inscribe en una orientación
-					psicoanalítica, desde donde acompaño a niños, adolescentes y
-					adultos en su recorrido analitíco.
+					<strong>Licenciado en Psicología (Mat. Nac.: 75427)</strong>{' '}
+					por la Universidad de Ciencias Empresariales y Sociales
+					(UCES). Mi práctica clínica se inscribe en una{' '}
+					<strong>orientación psicoanalítica</strong>, desde donde
+					acompaño a niños, adolescentes y adultos en su recorrido
+					analitíco.
 				</p>
 				<p className="mt-4">
-					Mi formación incluye experiencias en instituciones de salud
-					mental como el Hospital Durand, el Hospital Borda, la
-					Clínica Centro Psiquiátrico Ducont y el CET Proyecto
-					Puente-Symbolon, ámbitos donde profundicé mi práctica como
-					analista.
+					<strong>Mi formación incluye experiencias</strong> en
+					instituciones de salud mental como el{' '}
+					<strong>
+						Hospital Durand, el Hospital Borda, la Clínica Centro
+						Psiquiátrico Ducont y el CET Proyecto Puente-Symbolon
+					</strong>
+					, ámbitos donde profundicé mi práctica como analista.
 				</p>
 				<p className="mt-4">
-					Concibo este espacio un lugar donde la palabra toma cuerpo y
-					permite al sujeto desplegar su verdad, siempre en un marco
-					de ética, respeto y compromiso con su singularidad.
+					Concibo este <strong>espacio</strong> un lugar donde la
+					palabra toma cuerpo y permite al sujeto{' '}
+					<strong>desplegar su verdad</strong>, siempre en un marco de{' '}
+					<strong>ética, respeto y compromiso</strong> con su
+					singularidad.
 				</p>
 				<p className="mt-4">
-					¿Estás considerando iniciar terapia? Te ofrezco atención
-					virtual. Podés agendar una videollamada de 15 minutos para
-					conocernos o escribirme por WhatsApp.
+					<strong>¿Estás considerando iniciar terapia?</strong> Te
+					ofrezco atención virtual. Podés agendar una videollamada de
+					15 minutos para conocernos o escribirme por WhatsApp.
 				</p>
 			</div>
 			<Link

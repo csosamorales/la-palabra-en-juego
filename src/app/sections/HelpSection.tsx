@@ -9,24 +9,37 @@ export const HelpSection: React.FC = () => {
 			</h2>
 			<div className="text-xl leading-normal w-full max-md:w-full max-sm:text-base">
 				<p>
-					Si estás atravesando ansiedad, estrés, dificultades en tus
-					relaciones o simplemente quieres explorar más sobre ti
-					mismo, el psicoanálisis ofrece un espacio de escucha y
-					reflexión. A través de la palabra, podemos trabajar juntos
-					en comprender lo que te sucede y encontrar nuevas formas de
-					afrontar tu realidad.
+					El psicoanálisis no ofrece soluciones predefinidas ni
+					consejos sobre cómo vivir. No busca la adaptación ni el
+					control de síntomas, sino abrir un <strong>espacio</strong>{' '}
+					donde algo <strong>nuevo</strong> pueda decirse.
 				</p>
-				<p className="mt-4">
-					Mi enfoque se basa en la escucha atenta y en el respeto por
-					los tiempos de cada persona. En cada sesión, construiremos
-					un espacio donde puedas hablar sin juicios y donde el
-					malestar encuentre nuevas formas de expresión y elaboración.
-				</p>
-				<p className="mt-4">
-					Si queres saber más sobre cómo funciona la terapia
-					psicoanalítica o agendar una consulta, podes contactarme
-				</p>
+				<Paragraph>
+					Si hay algo que te causa <strong>malestar</strong>, si algo
+					en tu vida se repite sin que puedas evitarlo o si incluso no
+					sabés qué te trae hasta aquí, el trabajo analítico permite
+					poner en juego la palabra para escuchar aquello que insiste
+					más allá de lo consciente.
+				</Paragraph>
+				<Paragraph>
+					<strong>Cada análisis es singular</strong>. No hay
+					respuestas universales, pero sí la posibilidad de un decir
+					propio. La tarea del analista es escuchar lo que resuena en
+					ese decir, no para interpretar desde un saber previo, sino
+					para sostener la pregunta y{' '}
+					<strong>
+						hacer lugar a lo que aún no ha podido ser dicho.
+					</strong>
+				</Paragraph>
+				<Paragraph>
+					Si algo de esto <strong>resuena</strong> en vos, te invito a
+					que me contactes.
+				</Paragraph>
 			</div>
 		</section>
 	);
 };
+
+const Paragraph: React.FC<{ children: React.ReactNode }> = ({ children }) => (
+	<p className="mt-4">{children}</p>
+);
