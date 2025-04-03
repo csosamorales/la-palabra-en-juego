@@ -71,18 +71,18 @@ const Accordion: React.FC = () => {
 const faqItems = [
 	{
 		question: '¿Trabajás con Obra Social o Prepaga?',
-		answer: 'Actualmente trabajo de manera particular. Sin embargo, puedo proporcionarte un recibo para que gestiones el reintegro con tu obra social o prepaga si corresponde.',
+		answer: 'Trabajo mediante el sistema de reintegros. Puedo emitir factura para que el paciente gestione el reembolso según las condiciones de su cobertura.',
 	},
 	{
 		question: '¿Cuál es la frecuencia de las sesiones?',
-		answer: 'La frecuencia recomendada es de una sesión semanal, aunque esto puede variar según las necesidades particulares de cada persona y el momento del proceso terapéutico.',
+		answer: 'Las sesiones son semanales. Este ritmo permite sostener un trabajo continuo sobre lo que el paciente trae, respetando el tiempo singular de cada proceso.',
 	},
 	{
 		question: '¿Cuánto dura una sesión?',
-		answer: 'Las sesiones tienen una duración aproximada de 45-50 minutos.',
+		answer: 'La sesión no está sujeta a un tiempo fijo. Su duración es aproximada a los 40 minutos, aunque puede extenderse según lo que surja en el trabajo analítico.',
 	},
 	{
 		question: '¿Quién se puede atender?',
-		answer: 'Atiendo a niños (a partir de 6 años), adolescentes y adultos. Cada etapa vital tiene sus particularidades, y el abordaje se adapta a las necesidades específicas de cada persona.',
+		answer: 'Adolescentes y adultos. Cada recorrido es único, y el tratamiento se ajusta a las particularidades de cada quien.',
 	},
 ];
