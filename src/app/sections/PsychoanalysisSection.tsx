@@ -19,11 +19,11 @@ export const PsychoanalysisSection: React.FC = () => {
 			</Paragraph>
 
 			<Paragraph>
-				Por ejemplo, si alguien dice <em>"delfín azulado"</em> en
-				castellano, otro podría escuchar <em>"del fin a su lado"</em>.
-				Pero, ¿es válido suponer que la persona quiso decir algo
-				distinto solo porque las <strong>palabras</strong> suenan
-				parecidas?
+				Por ejemplo, si alguien dice{' '}
+				<em>&ldquo;delfín azulado&ldquo;</em> en castellano, otro podría
+				escuchar <em>&ldquo;del fin a su lado&ldquo;</em>. Pero, ¿es
+				válido suponer que la persona quiso decir algo distinto solo
+				porque las <strong>palabras</strong> suenan parecidas?
 			</Paragraph>
 
 			<Paragraph>
