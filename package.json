@@ -9,8 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^15.2.4",
     "classnames": "^2.5.1",
-    "next": "15.2.2",
+    "next": "^15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",

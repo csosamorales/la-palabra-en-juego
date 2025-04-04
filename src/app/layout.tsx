@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Karma, Phudu } from 'next/font/google';
 import './globals.css';
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const karma = Karma({
 	variable: '--font-karma',
@@ -29,6 +30,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="es">
+			<GoogleTagManager gtmId="GTM-WVBVM8X9" />
 			<body className={`${karma.variable} ${phudu.variable} antialiased`}>
 				{children}
 			</body>
