@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Karma, Phudu } from 'next/font/google';
 import './globals.css';
 import { GoogleTagManager } from '@next/third-parties/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const karma = Karma({
 	variable: '--font-karma',
@@ -33,6 +34,7 @@ export default function RootLayout({
 			<GoogleTagManager gtmId="GTM-WVBVM8X9" />
 			<body className={`${karma.variable} ${phudu.variable} antialiased`}>
 				{children}
+				<SpeedInsights />
 			</body>
 		</html>
 	);
