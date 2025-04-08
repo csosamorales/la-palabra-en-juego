@@ -3,6 +3,7 @@ import { Karma, Phudu } from 'next/font/google';
 import './globals.css';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/next';
 
 const karma = Karma({
 	variable: '--font-karma',
@@ -53,6 +54,7 @@ export default function RootLayout({
 			<body className={`${karma.variable} ${phudu.variable} antialiased`}>
 				{children}
 				<SpeedInsights />
+				<Analytics />
 			</body>
 		</html>
 	);
