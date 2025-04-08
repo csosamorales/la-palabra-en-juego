@@ -10,6 +10,7 @@ export const HeroSection: React.FC = () => (
 			alt="background image"
 			fill
 			priority
+			loading='lazy'
 			className="!w-auto sm:!-right-16 !h-[90%] lg:!top-0 xl:!h-[90%] mx-auto mt-16 mb-16 hidden md:inline -z-0 animate-fade animate-duration-[1500ms] animate-delay-500"
 		/>
 
@@ -26,6 +27,7 @@ export const HeroSection: React.FC = () => (
 			alt="background image"
 			fill
 			priority
+			loading='lazy'
 			className="!w-[90vw] !h-auto mr-auto ml-auto !top-[35%] xs:!top-[25%] sm:!top-[64px] sm:!w-auto sm:!h-[90%] md:m-16 md:hidden -z-0 animate-fade animate-duration-[1500ms] animate-delay-500"
 		/>
 	</section>

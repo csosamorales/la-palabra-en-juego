@@ -25,6 +25,7 @@ export const CTASection: React.FC = () => {
 						height={70}
 						alt="arrow"
 						className="hidden md:inline"
+						loading='lazy'
 					/>
 					<div className="flex flex-row gap-4">
 						<Image
@@ -33,6 +34,7 @@ export const CTASection: React.FC = () => {
 							height={70}
 							alt="arrow"
 							className="md:hidden"
+							loading='lazy'
 						/>
 						<Link
 							href={LINKS.calendly}

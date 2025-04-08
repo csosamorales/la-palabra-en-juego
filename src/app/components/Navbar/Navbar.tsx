@@ -75,6 +75,7 @@ const Navbar: React.FC = () => {
 							height={40}
 							alt="Logo La palabra en juego"
 							className="cursor-pointer"
+							loading='lazy'
 						/>
 					</ScrollToTop>
 				</div>
