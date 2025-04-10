@@ -10,7 +10,7 @@ export const PresentationSection: React.FC = () => (
 		<Image
 			width={598}
 			height={802}
-			src="/guido.jpeg"
+			src="/guido.webp"
 			className="object-cover h-[90vh] rounded-2xl max-w-[598px] max-lg:mx-auto max-lg:my-0 max-lg:w-full max-lg:h-auto max-lg:max-w-[500px] focus:animate-fade-right focus:animate-once focus:animate-duration-[1500ms]"
 			alt="Profile of Guido Le Vigne"
 		/>

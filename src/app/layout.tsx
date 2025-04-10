@@ -21,10 +21,10 @@ export const metadata: Metadata = {
 	description:
 		'Soy Guido Le Vigne, Licenciado en Psicología y concibo este espacio de terapia psicoanalíitica online',
 	icons: {
-		icon: '/logo.png',
+		icon: '/logo.webp',
 	},
 	twitter: {
-		images: '/logo.png',
+		images: '/logo.webp',
 		card: 'summary_large_image',
 		title: 'La palabra en juego | sesiones online de psicoanálisis',
 		description:
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 		description:
 			'Soy Guido Le Vigne, Licenciado en Psicología y concibo este espacio de terapia psicoanalíitica online',
 		siteName: 'La palabra en juego',
-		images: [{ url: '/logo.png' }],
+		images: [{ url: '/logo.webp' }],
 		locale: 'es-AR',
 	},
 };
