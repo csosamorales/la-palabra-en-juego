@@ -17,25 +17,30 @@ const phudu = Phudu({
 });
 
 export const metadata: Metadata = {
-	title: 'La palabra en juego | sesiones online de psicoanálisis',
+	title: 'Psicoanálisis online con Guido Le Vigne | Psicólogo especializado en terapia por videollamada',
 	description:
-		'Soy Guido Le Vigne, Licenciado en Psicología y concibo este espacio de terapia psicoanalíitica online',
+		'Ofrezco sesiones online de psicoanálisis desde una mirada profesional y comprometida. Soy Guido Le Vigne, Licenciado en Psicología, especializado en terapia por videollamada.',
 	icons: {
 		icon: '/logo.webp',
+		apple: '/logo.webp',
 	},
+	keywords:['psicología', 'psicoanálisis', 'terapia online', 'psicólogo', 'Guido Le Vigne'],
+	authors: [{ name: 'Guido Le Vigne', url: 'https://lapalabraenjuego.com' }],
+	creator: 'Guido Le Vigne',
+	applicationName: 'La palabra en juego',
 	twitter: {
 		images: '/logo.webp',
-		card: 'summary_large_image',
-		title: 'La palabra en juego | sesiones online de psicoanálisis',
+		card: 'summary',
+		title: 'Psicoanálisis online con Guido Le Vigne | Psicólogo especializado en terapia por videollamada',
 		description:
-			'Soy Guido Le Vigne, Licenciado en Psicología y concibo este espacio de terapia psicoanalíitica online',
+			'Ofrezco sesiones online de psicoanálisis desde una mirada profesional y comprometida. Soy Guido Le Vigne, Licenciado en Psicología, especializado en terapia por videollamada.',
 	},
 	openGraph: {
 		type: 'website',
 		url: 'https://lapalabraenjuego.com',
-		title: 'La palabra en juego | sesiones online de psicoanálisis',
+		title: 'Psicoanálisis online con Guido Le Vigne | Psicólogo especializado en terapia por videollamada',
 		description:
-			'Soy Guido Le Vigne, Licenciado en Psicología y concibo este espacio de terapia psicoanalíitica online',
+			'Ofrezco sesiones online de psicoanálisis desde una mirada profesional y comprometida. Soy Guido Le Vigne, Licenciado en Psicología, especializado en terapia por videollamada.',
 		siteName: 'La palabra en juego',
 		images: [{ url: '/logo.webp' }],
 		locale: 'es-AR',
