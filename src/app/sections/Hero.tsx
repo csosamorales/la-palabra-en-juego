@@ -3,14 +3,14 @@ import Image from 'next/image';
 export const HeroSection: React.FC = () => (
 	<section
 		id="hero-section"
-		className="w-full h-[90vh] md:min-[90vh] flex flex-col justify-center items-center gap-1"
+		className="w-full h-[90vh] md:min-[90vh] flex flex-col justify-center items-center gap-10"
 	>
 		<Image
 			src="/background.webp"
 			alt="background image"
 			fill
 			priority
-			className="!w-auto sm:!-right-16 !h-[90%] lg:!top-0 xl:!h-[90%] mx-auto mt-16 mb-16 hidden md:inline -z-0 animate-fade animate-duration-[1500ms] animate-delay-500"
+			className="!w-auto sm:!-right-16 !h-[90%] lg:!top-0 xl:!h-[90%] mx-auto mt-16 mb-16 hidden lg:inline -z-0 animate-fade animate-duration-[1500ms] animate-delay-500"
 		/>
 
 		<div className="flex flex-col justify-center items-center gap-1 animate-fade animate-once animate-duration-[1500ms] animate-ease-in">
@@ -22,11 +22,11 @@ export const HeroSection: React.FC = () => (
 			</h1>
 		</div>
 		<Image
-			src="/fondo-mobile.webp"
+			src="/mobile.png"
 			alt="background image"
 			fill
 			priority
-			className="!w-[90vw] !h-auto mr-auto ml-auto !top-[35%] xs:!top-[25%] sm:!top-[64px] sm:!w-auto sm:!h-[90%] md:m-16 md:hidden -z-0 animate-fade animate-duration-[1500ms] animate-delay-500"
+			className="!relative !w-[90vw] !h-auto sm:!w-auto sm:!h-[100%] lg:hidden -z-0 animate-fade animate-duration-[1500ms] animate-delay-500"
 		/>
 	</section>
 );

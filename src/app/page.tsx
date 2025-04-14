@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<div className="flex flex-col items-center justify-items-center min-h-screen font-text bg-gradient-to-b from-background from-29% via-7288a9 via-71% to-5378B0 to-100%">
 			<NavigationBar />
-			<main className="flex flex-col sm:gap-8 row-start-2 items-center mt-16 mx-4 md:mx-24 max-w-7xl">
+			<main className="flex flex-col sm:gap-8 row-start-2 items-center mt-16 mx-4 md:mx-8 lg:mx-24 max-w-7xl">
 				<HeroSection />
 				<PresentationSection />
 				<PsychoanalysisSection />
