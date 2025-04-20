@@ -2,9 +2,9 @@ export const PsychoanalysisSection: React.FC = () => {
 	return (
 		<section
 			id="psychoanalysis-section"
-			className="py-20 pr-30 pl-30 max-md:px-5 max-md:py-10"
+			className="px-5 py-10 md:px-16 md:py-20 lg:py-20 lg:px-30"
 		>
-			<h2 className="mb-16 text-5xl max-sm:text-3xl">
+			<h2 className="mb-16 text-3xl sm:text-5xl xl:text-7xl 2xl:text-8xl">
 				Un poquito sobre el psicoanálisis....
 			</h2>
 
@@ -56,7 +56,7 @@ export const PsychoanalysisSection: React.FC = () => {
 };
 
 const Paragraph: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-	<p className="text-xl leading-normal max-w-[1060px] max-sm:text-base">
+	<p className="text-base leading-normal max-w-[1060px] lg:text-xl 2xl:text-3xl">
 		{children}
 	</p>
 );

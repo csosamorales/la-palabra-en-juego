@@ -17,7 +17,7 @@ const NavLink = forwardRef<HTMLAnchorElement, NavLinkProps>(
 				ref={ref}
 				href={href}
 				onClick={onClick}
-				className={`text-base text-center text-black hover:scale-110 transition-transform duration-700 ease-out ${className}`}
+				className={`text-base text-center 2xl:text-3xl text-black hover:scale-110 transition-transform duration-700 ease-out ${className}`}
 			>
 				{children}
 			</Link>

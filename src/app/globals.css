@@ -23,6 +23,7 @@
 	--font-text: var(--font-karma);
 	--font-title: var(--font-phudu);
 	--breakpoint-xs: 26.5625rem;
+	--breakpoint-3xl: 160rem;
 }
 
 @media (prefers-color-scheme: dark) {

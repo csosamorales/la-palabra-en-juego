@@ -2,12 +2,12 @@ export const HelpSection: React.FC = () => {
 	return (
 		<section
 			id="help-section"
-			className="flex gap-16 justify-center items-center px-16 py-20 max-lg:flex-col max-md:px-5 max-md:py-10"
+			className="flex flex-col gap-16 justify-center items-center px-5 py-10 md:px-16 md:py-20"
 		>
-			<h2 className="text-5xl text-center w-full max-sm:text-3xl">
+			<h2 className="text-3xl text-center w-full sm:text-5xl xl:text-7xl 2xl:text-8xl">
 				Te preguntas, ¿Cómo puede ayudarte el psicoanálisis?
 			</h2>
-			<div className="text-xl leading-normal w-full max-md:w-full max-sm:text-base">
+			<div className="text-base leading-normal w-full max-md:w-full lg:text-xl 2xl:text-3xl">
 				<p>
 					El psicoanálisis no ofrece soluciones predefinidas ni
 					consejos sobre cómo vivir. No busca la adaptación ni el

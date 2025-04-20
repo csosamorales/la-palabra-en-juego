@@ -5,8 +5,8 @@ import { FaChevronDown } from 'react-icons/fa';
 
 export const FAQSection: React.FC = () => {
 	return (
-		<section id="faqs-section" className="px-0 py-14">
-			<h2 className="mb-20 text-5xl text-center text-black max-sm:text-3xl">
+		<section id="faqs-section" className="px-5 py-10 md:px-16 md:py-20 lg:py-20 lg:px-30">
+			<h2 className="mb-20 text-3xl text-center text-black sm:text-5xl xl:text-7xl 2xl:text-8xl">
 				Preguntas Frecuentes
 			</h2>
 			<div className="mx-auto my-0 max-w-2xl max-md:px-5 max-md:py-0 divide-y">
@@ -36,7 +36,7 @@ const Accordion: React.FC = () => {
 						aria-expanded={openFaq === index}
 						aria-controls={`faq-answer-${index}`}
 					>
-						<span>{item.question}</span>
+						<span className='text-base lg:text-xl 2xl:text-3xl'>{item.question}</span>
 						<FaChevronDown
 							size={20}
 							className={classNames(

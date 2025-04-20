@@ -7,7 +7,7 @@ export const CTASection: React.FC = () => {
 	return (
 		<section
 			id="cta-section"
-			className="flex flex-col items-center px-0 py-26 lg:py-48 text-center"
+			className="flex flex-col items-center text-center px-5 py-10 md:px-16 md:py-20 lg:py-20 lg:px-30"
 		>
 			<div>
 				<div className="flex flex-col md:flex-row gap-4 items-center ">

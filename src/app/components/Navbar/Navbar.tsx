@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
 	return (
 		<>
 			<nav
-				className={`fixed top-0 left-0 transition-transform duration-500 flex justify-between items-center px-4 sm:px-9 w-full h-16 backdrop-blur-[2px] bg-transparent bg-opacity-0 z-50 animate-fade-down animate-once animate-duration-1000 animate-delay-200 ${
+				className={`fixed top-0 left-0 transition-transform duration-500 flex justify-between items-center px-4 sm:px-9 w-full min-h-16 backdrop-blur-[2px] bg-transparent bg-opacity-0 z-50 animate-fade-down animate-once animate-duration-1000 animate-delay-200 ${
 					hidden ? '-translate-y-full' : 'translate-y-0'
 				}`}
 				role="navigation"
@@ -71,10 +71,10 @@ const Navbar: React.FC = () => {
 					<ScrollToTop>
 						<Image
 							src="./logo-divan.svg"
-							width={40}
-							height={40}
+							width={50}
+							height={50}
 							alt="Logo La palabra en juego"
-							className="cursor-pointer"
+							className="cursor-pointer 2xl:w-[70px] 2xl:h-[70px]"
 							loading='lazy'
 						/>
 					</ScrollToTop>
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
 						href={LINKS.calendly}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-base py-0.5 px-1 font-bold rounded-lg border-2 cursor-pointer bg-[#523f7d4f] border-523f7d text-523f7d font-title hover:scale-110 transition-transform duration-500 ease-out"
+						className="text-base 2xl:text-2xl py-0.5 px-1 font-bold rounded-lg border-2 cursor-pointer bg-[#523f7d4f] border-523f7d text-523f7d font-title hover:scale-110 transition-transform duration-500 ease-out"
 						aria-label="Reservar turno"
 					>
 						RESERVAR TURNO

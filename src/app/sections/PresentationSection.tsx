@@ -5,20 +5,20 @@ import { BiSolidConversation } from 'react-icons/bi';
 export const PresentationSection: React.FC = () => (
 	<section
 		id="presentation-section"
-		className="flex flex-col gap-14 py-8 lg:mr-auto lg:ml-auto lg:flex-row max-md:px-5 max-md:py-10"
+		className="flex flex-col sm:gap-4 lg:gap-14 py-8 lg:mr-auto lg:ml-auto lg:flex-row max-md:px-5"
 	>
 		<Image
 			width={598}
 			height={802}
 			src="/guido.webp"
-			className="object-cover h-[90vh] rounded-2xl max-w-[598px] max-lg:mx-auto max-lg:my-0 max-lg:w-full max-lg:h-auto max-lg:max-w-[500px] focus:animate-fade-right focus:animate-once focus:animate-duration-[1500ms]"
+			className="object-cover h-auto lg:h-[90vh] max-w-78 max-h-[500px] !w-full sm:max-w-100 2xl:max-w-full lg:max-h-[1000px] rounded-2xl max-lg:mx-auto max-lg:my-0 focus:animate-fade-right focus:animate-once focus:animate-duration-[1500ms]"
 			alt="Profile of Guido Le Vigne"
 		/>
-		<div className="xl:pt-20 w-full max-w-[90vw] max-md:pt-10 animate-fade-left animate-once animate-duration-[1500ms] flex flex-col items-center lg:items-start">
-			<h1 className="mb-10 text-6xl text-center text-black max-sm:text-4xl">
+		<div className="w-full max-w-[90vw] max-md:pt-10 animate-fade-left animate-once animate-duration-[1500ms] flex flex-col items-center lg:items-start">
+			<h2 className="mb-10 text-center text-black text-4xl sm:text-5xl lg:text-[2.5rem] xl:text-6xl 2xl:text-7xl 3xl:text-8xl">
 				Hola! Soy Guido Le Vigne
-			</h1>
-			<div className="mb-9 text-xl leading-normal text-black max-sm:text-base">
+			</h2>
+			<div className="mb-9 text-base leading-normal text-black xl:text-xl 2xl:text-2xl">
 				<p>
 					<strong>Licenciado en Psicología (Mat. Nac.: 75427)</strong>{' '}
 					por la Universidad de Ciencias Empresariales y Sociales
@@ -51,7 +51,7 @@ export const PresentationSection: React.FC = () => (
 			</div>
 			<Link
 				href={'/#cta-section'}
-				className="flex flex-row gap-2 items-center text-xl font-title font-bold rounded-2xl border-2 border-solid cursor-pointer bg-[#523f7d4f] border-523f7d text-523f7d hover:scale-110 transition-transform duration-500 ease-out py-3 px-6 w-fit"
+				className="flex flex-row gap-2 items-center text-xl 2xl:text-3xl font-title font-bold rounded-2xl border-2 border-solid cursor-pointer bg-[#523f7d4f] border-523f7d text-523f7d hover:scale-110 transition-transform duration-500 ease-out py-3 px-6 w-fit"
 				aria-label="Contactar a Guido Le Vigne"
 			>
 				<BiSolidConversation />
