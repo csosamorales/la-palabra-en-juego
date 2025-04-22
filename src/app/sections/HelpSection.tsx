@@ -2,7 +2,7 @@ export const HelpSection: React.FC = () => {
 	return (
 		<section
 			id="help-section"
-			className="flex flex-col gap-16 justify-center items-center px-5 py-10 md:px-16 md:py-20"
+			className="flex flex-col md:flex-row  gap-16 justify-center items-center px-5 py-10 md:px-16 md:py-20"
 		>
 			<h2 className="text-3xl text-center w-full sm:text-5xl xl:text-7xl 2xl:text-8xl">
 				Te preguntas, ¿Cómo puede ayudarte el psicoanálisis?
