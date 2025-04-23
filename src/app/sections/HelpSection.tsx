@@ -1,13 +1,38 @@
+'use client';
+
+import { useRef } from 'react';
+import { useIsVisible } from '../hooks/useIsVisible';
+
 export const HelpSection: React.FC = () => {
+	const titleRef = useRef<HTMLHeadingElement>(null);
+	const isTitleVisible = useIsVisible({ ref: titleRef });
+
+	const textContainerRef = useRef<HTMLDivElement>(null);
+	const isTextContainerVisible = useIsVisible({ ref: textContainerRef });
+
 	return (
 		<section
 			id="help-section"
 			className="flex flex-col md:flex-row  gap-16 justify-center items-center px-5 py-10 md:px-16 md:py-20"
 		>
-			<h2 className="text-3xl text-center w-full sm:text-5xl xl:text-7xl 2xl:text-8xl">
+			<h2
+				ref={titleRef}
+				className={`text-3xl text-center w-full sm:text-5xl xl:text-7xl 2xl:text-8xl ${
+					isTitleVisible
+						? 'animate-fade animate-duration-[1500ms]'
+						: ''
+				}`}
+			>
 				Te preguntas, ¿Cómo puede ayudarte el psicoanálisis?
 			</h2>
-			<div className="text-base leading-normal w-full max-md:w-full lg:text-xl 2xl:text-3xl">
+			<div
+				ref={textContainerRef}
+				className={`text-base leading-normal w-full max-md:w-full lg:text-xl 2xl:text-3xl ${
+					isTextContainerVisible
+						? 'animate-fade-left animate-duration-[1500ms]'
+						: ''
+				}`}
+			>
 				<p>
 					El psicoanálisis no ofrece soluciones predefinidas ni
 					consejos sobre cómo vivir. No busca la adaptación ni el
