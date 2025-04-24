@@ -23,7 +23,10 @@ export function useIsVisible({ ref }: useIsVisibleProps) {
 				if (entry.isIntersecting && !isIntersecting) {
 					// only trigger the animation once
 					setIntersecting(entry.isIntersecting);
-					ref.current && observer.unobserve(ref.current);
+
+					if (ref.current) {
+						observer.unobserve(ref.current);
+					}
 				}
 			},
 			{ threshold: 0.1 }
