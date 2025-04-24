@@ -33,7 +33,7 @@ export function useIsVisible({ ref }: useIsVisibleProps) {
 		return () => {
 			observer.disconnect();
 		};
-	}, [ref]);
+	}, [ref, isIntersecting]);
 
 	return isIntersecting;
 }
