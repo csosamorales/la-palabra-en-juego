@@ -17,9 +17,9 @@ const phudu = Phudu({
 });
 
 export const metadata: Metadata = {
-	title: 'Psicoanálisis online con Guido Le Vigne | Psicólogo especializado en terapia por videollamada',
+	title: 'Terapia psicoanalítica online',
 	description:
-		'Ofrezco sesiones online de psicoanálisis desde una mirada profesional y comprometida. Soy Guido Le Vigne, Licenciado en Psicología, especializado en terapia por videollamada.',
+		'Sesiones de psicoanálisis online. Soy Guido Le Vigne, Lic. en Psicología, con orientación psicoanalítica.',
 	icons: {
 		icon: '/logo.webp',
 		apple: '/logo.webp',
@@ -31,16 +31,16 @@ export const metadata: Metadata = {
 	twitter: {
 		images: '/logo.webp',
 		card: 'summary',
-		title: 'Psicoanálisis online con Guido Le Vigne | Psicólogo especializado en terapia por videollamada',
+		title: 'Terapia psicoanalítica online',
 		description:
-			'Ofrezco sesiones online de psicoanálisis desde una mirada profesional y comprometida. Soy Guido Le Vigne, Licenciado en Psicología, especializado en terapia por videollamada.',
+			'Sesiones de psicoanálisis online. Soy Guido Le Vigne, Lic. en Psicología, con orientación psicoanalítica.',
 	},
 	openGraph: {
 		type: 'website',
 		url: 'https://lapalabraenjuego.com',
-		title: 'Psicoanálisis online con Guido Le Vigne | Psicólogo especializado en terapia por videollamada',
+		title: 'Terapia psicoanalítica online',
 		description:
-			'Ofrezco sesiones online de psicoanálisis desde una mirada profesional y comprometida. Soy Guido Le Vigne, Licenciado en Psicología, especializado en terapia por videollamada.',
+			'Sesiones de psicoanálisis online. Soy Guido Le Vigne, Lic. en Psicología, con orientación psicoanalítica.',
 		siteName: 'La palabra en juego',
 		images: [{ url: '/logo.webp' }],
 		locale: 'es-AR',
