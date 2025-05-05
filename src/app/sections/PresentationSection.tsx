@@ -22,19 +22,17 @@ export const PresentationSection: React.FC = () => {
 				width={598}
 				height={802}
 				src="/guido.webp"
-				className={`object-cover h-auto lg:h-[80vh] max-w-78 max-h-[500px] !w-full sm:max-w-100 2xl:max-w-full lg:max-h-[1000px] rounded-2xl max-lg:mx-auto max-lg:my-0 ${
-					isImageVisible
-						? 'animate-fade-right animate-once animate-duration-[1000ms] animate-delay-[200ms]'
-						: ''
+				className={`object-cover h-auto lg:h-[80vh] max-w-78 max-h-[500px] !w-full sm:max-w-100 2xl:max-w-full lg:max-h-[1000px] rounded-2xl max-lg:mx-auto max-lg:my-0 transition-opacity ease-in duration-700 animate-delay-200 ${
+					isImageVisible ? 'opacity-100 animate-fade-up' : 'opacity-0'
 				} `}
 				alt="Profile of Guido Le Vigne"
 				ref={imageRef}
 			/>
 			<div
-				className={`w-full max-w-[90vw] max-md:pt-10 flex flex-col items-center lg:items-start ${
+				className={`w-full max-w-[90vw] max-md:pt-10 flex flex-col items-center lg:items-start transition-opacity ease-in duration-700 animate-delay-200 ${
 					isTextContainerRef
-						? 'animate-fade-left animate-once animate-duration-[1500ms]'
-						: ''
+						? 'opacity-100 animate-fade-up'
+						: 'opacity-0'
 				}`}
 				ref={textContainerRef}
 			>

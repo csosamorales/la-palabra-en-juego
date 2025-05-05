@@ -17,20 +17,20 @@ export const HelpSection: React.FC = () => {
 		>
 			<h2
 				ref={titleRef}
-				className={`text-3xl text-center w-full sm:text-5xl xl:text-7xl 2xl:text-8xl ${
+				className={`text-3xl text-center w-full sm:text-5xl xl:text-7xl 2xl:text-8xl transition-opacity ease-in duration-700 animate-delay-200 ${
 					isTitleVisible
-						? 'animate-fade animate-duration-[1500ms]'
-						: ''
+						? 'animate-fade-up opacity-100'
+						: 'opacity-0'
 				}`}
 			>
 				Te preguntas, ¿Cómo puede ayudarte el psicoanálisis?
 			</h2>
 			<div
 				ref={textContainerRef}
-				className={`text-base leading-normal w-full max-md:w-full lg:text-xl 2xl:text-3xl ${
+				className={`text-base leading-normal w-full max-md:w-full lg:text-xl 2xl:text-3xl transition-opacity ease-in duration-700 animate-delay-200 ${
 					isTextContainerVisible
-						? 'animate-fade-left animate-duration-[1500ms]'
-						: ''
+						? 'opacity-100 animate-fade-up'
+						: 'opacity-0'
 				}`}
 			>
 				<p>

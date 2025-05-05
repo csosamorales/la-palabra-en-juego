@@ -7,6 +7,8 @@ export const PsychoanalysisSection: React.FC = () => {
 	const titleRef = useRef<HTMLHeadingElement>(null);
 	const isTitleVisible = useIsVisible({ ref: titleRef });
 
+	console.log('isTitleVisible', isTitleVisible);
+
 	const textContainerRef = useRef<HTMLDivElement>(null);
 	const isTextContainerVisible = useIsVisible({ ref: textContainerRef });
 
@@ -17,10 +19,10 @@ export const PsychoanalysisSection: React.FC = () => {
 		>
 			<h2
 				ref={titleRef}
-				className={`mb-16 text-3xl sm:text-5xl xl:text-7xl 2xl:text-8xl ${
+				className={`mb-16 text-3xl sm:text-5xl xl:text-7xl 2xl:text-8xl transition-opacity ease-in duration-700 animate-delay-200 ${
 					isTitleVisible
-						? 'animate-fade-down animate-duration-[1500ms]'
-						: ''
+						? 'opacity-100 animate-fade-up '
+						: 'opacity-0'
 				}`}
 			>
 				Un poquito sobre el psicoanálisis....
@@ -28,10 +30,10 @@ export const PsychoanalysisSection: React.FC = () => {
 
 			<div
 				ref={textContainerRef}
-				className={`flex flex-col gap-1 ${
+				className={`flex flex-col gap-1 transition-opacity ease-in duration-700 animate-delay-200 ${
 					isTextContainerVisible
-						? 'animate-fade-left animate-duration-[1500ms]'
-						: ''
+						? 'animate-fade-up opacity-100'
+						: 'opacity-0'
 				}`}
 			>
 				<Paragraph>
