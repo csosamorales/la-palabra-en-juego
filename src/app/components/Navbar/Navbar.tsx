@@ -3,11 +3,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import NavLink from './NavLink';
-import Link from 'next/link';
 import MobileMenu from './MobileMenu';
 import { Overlay } from './Overlay';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { LINKS } from '@/app/constants';
 
 import { ScrollToTop } from '../ScrollToTop/ScrollToTop';
 
@@ -75,7 +73,7 @@ const Navbar: React.FC = () => {
 							height={50}
 							alt="Logo La palabra en juego"
 							className="cursor-pointer 2xl:w-[70px] 2xl:h-[70px]"
-							loading='lazy'
+							loading="lazy"
 						/>
 					</ScrollToTop>
 				</div>
@@ -90,15 +88,6 @@ const Navbar: React.FC = () => {
 				</div>
 
 				<div className="flex items-center">
-					<Link
-						href={LINKS.calendly}
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-base 2xl:text-2xl py-0.5 px-1 font-bold rounded-lg border-2 cursor-pointer bg-[#523f7d4f] border-523f7d text-523f7d font-title hover:scale-110 transition-transform duration-500 ease-out"
-						aria-label="Reservar turno"
-					>
-						RESERVAR TURNO
-					</Link>
 					<button
 						ref={menuButtonRef}
 						className="ml-4 block sm:hidden"
